@@ -8,13 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>Median House Value Correlations</title>
+    <title>Conclusion</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS: stylesheet to override any Bootstrap styles and/or apply your own styles -->
-    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/custom_conclusion.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -90,46 +90,47 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                 	<span class="glyphicon glyphicon-home" style="font-size: 60px"></span>
-                    <h2 class="section-heading">Median House Value Correlations</h2>
-                    <p class="text-light">Under Median House Value Correlations, we investigated a few potential factors to see whether there was a correlation with the median house value. We show that Median Income had the stronger positive relationship whereas the other factors, had zero relationships based off of the trend line.</p>
+                    <h2 class="section-heading">Conclusion</h2>
+                    <p class="text-light">
+                        <b>Analysis</b></br>
+                        Preprocessing the data which involved encoding and translating the data into numerical values
+                        Used the train test split to train the model into predicting values at 20% for our test size
+                        The closer the r2 score is closer to one the more accurate the prediction is. </br></br></br>
+
+                        <b>Linear Regression</b></br>
+
+                        The r2 scores for the y_test and the y_predict is 62.78% for the linear regression model.</br></br></br>
+
+                        <b>Decision Tree Regression</b></br>
+
+                        The r2 scores for the y_test and the y_predict is 71.42% for the decision tree regression model.</br></br></br>
+
+                        <b>Random Forest Regression</b></br>
+
+                        The r2 scores for the y_test and the y_predict is 81.56% for the random forest regression model.</br></br></br>
+
+                        <b>Lasso Regression</b></br>
+
+                        The r2 scores for the x_test and the y_test is 71.93% for the lasso regression.</br></br></br>
+
+                        <b>Ridge Regression</b></br>
+
+                        The r2 scores for the x_test and the y_test is 62.78% for the ridge regression.</br></br></br>
+
+                        <b>ElasticNet Regression</b></br>
+
+                        The r2 scores for the x_test and the y_test is 9.47% for the elasticnet regression.</br></br></br>
+
+                        <b>Conclusion</b></br>
+
+                        The Random Forest Regression model had the best prediction accuracy at a percentage of 81.56%. The ElasticNet Regression had the worst prediction accuracy at a percentage of 9.47% because it was the farthest from 100%.</br></br></br>
+
+                    </p>
                 </div>
             </div>
         </div>
     </section>
-    <!--Tableau Graph Median Income vs Total Rooms-->
-    <div class='tableauPlaceholder' id='viz1614831185118' style='width: 800px; height: 700px;'>
-        <noscript>
-            <a href='#'>
-                <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ho&#47;HousingMedianHeatMapDashboard&#47;Dashboard3&#47;1_rss.png' style='border: none' />
-            </a>
-        </noscript>
-        <object class='tableauViz'  style='display:none;'>
-            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-            <param name='embed_code_version' value='3' />
-            <param name='site_root' value='' />
-            <param name='name' value='HousingMedianHeatMapDashboard&#47;Dashboard3' />
-            <param name='tabs' value='no' />
-            <param name='toolbar' value='yes' />
-            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ho&#47;HousingMedianHeatMapDashboard&#47;Dashboard3&#47;1.png' />
-            <param name='animate_transition' value='yes' />
-            <param name='display_static_image' value='yes' />
-            <param name='display_spinner' value='yes' />
-            <param name='display_overlay' value='yes' />
-            <param name='display_count' value='yes' />
-            <param name='language' value='en' />
-            <param name='filter' value='publish=yes' />
-        </object>
-    </div>                
-        <script type='text/javascript'>                    
-            var divElement = document.getElementById('viz1614831185118');                    
-            var vizElement = divElement.getElementsByTagName('object')[0];                    
-            if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
-            else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
-            else { vizElement.style.width='100%';vizElement.style.height='727px';}                     
-            var scriptElement = document.createElement('script');                    
-            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-        </script>
+    
     <!-- Footer -->
     <footer class="page-footer">
     
