@@ -9,6 +9,8 @@ The problem statement we're exploring is rising housing prices and unpredictabil
 - Preprocessing the data which involved encoding and translating the data into numerical values
 - Used the train test split to train the model into predicting values at 20% for our test size
 - The closer the r2 score is closer to one the more accurate the prediction is. 
+- 100% would represent an r2 score of 1
+
 ## Linear Regression
 - The r2 scores for the y_test and the y_predict is 62.78% for the linear regression model.
 ## Decision Tree Regression
