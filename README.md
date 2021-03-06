@@ -1,6 +1,9 @@
 # Website
 https://j3n1.github.io/pen15_project/html_template/
 
+# Tableau Workbooks
+https://public.tableau.com/views/HousingMedianHeatMapDashboard/Dashboard3?:language=en&:display_count=y&publish=yes&:origin=viz_share_link
+
 # Problem Statement 
 We plan to predict home prices using data from the 1990 US Housing Census. 
 The problem statement we're exploring is rising housing prices and unpredictability in the market. Using our machine learning model, we hope to educate others to be informed before purchasing their next home.
